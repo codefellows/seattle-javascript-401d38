@@ -1,0 +1,21 @@
+{
+  "name": "review",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "jest": "^26.5.3"
+  }
+}
