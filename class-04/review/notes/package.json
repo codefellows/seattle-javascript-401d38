@@ -1,0 +1,32 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Notesy node app",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401Repo/notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401Repo/notes/issues"
+  },
+  "homepage": "https://github.com/401Repo/notes#readme",
+  "keywords": [],
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "minimist": "^1.2.5",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {
+    "jest": "^26.5.3",
+    "jst": "0.0.13"
+  }
+}
