@@ -1,0 +1,105 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "defaultDescription",
+    "version": "0.1",
+    "title": "defaultTitle"
+  },
+  "paths": {
+    "/users": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model4"
+            }
+          }
+        }
+      }
+    },
+    "/users/1": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "404": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model3"
+            }
+          }
+        }
+      },
+      "delete": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Model0"
+            },
+            "x-examples": {
+              "application/json": "{\n    \"role\": \"test\"\n}"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Model0": {
+      "properties": {
+        "role": {
+          "type": "string"
+        }
+      }
+    },
+    "Model1": {
+      "type": "array"
+    },
+    "Model2": {},
+    "Model3": {},
+    "Array": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model4": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Array"
+      }
+    }
+  }
+}
