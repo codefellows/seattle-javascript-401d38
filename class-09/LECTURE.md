@@ -16,8 +16,20 @@
 - Riva testing our routes.  
   - What code runs, when.
 
+- Drive vs navigate?
+  - Where should Start?
+
+
 ## Router Param Middleware
+
+- A method on a router, that let's us use specific middleware function when a parameter is present
+  - `/products/:id`
+  - `productRouter.param('id', (req, res, next) => console.log('id is in route'))`
+- We'll use this to make our router dynamically select our resource.
 
 ## Mongoose Vitual Joins
 
 - Getting data from resources that share a local and foreign key
+- Our Products will always contain a category?
+  - If a category exists, the category object was attached
+  - Mongoose has a feature for that: virtauals ( field added to the schema at runtime, when the query occurs )
