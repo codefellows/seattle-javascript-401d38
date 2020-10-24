@@ -36,7 +36,7 @@
 - Still a sequence of node
   - Node still have our value and next
 
-### Termininology
+### Terminology
 
 - Front: the beginning of our Queue, this is where things are "dequeued"
 - Rear: the end of the Queue, this is where things are "Enqueued"
@@ -51,6 +51,6 @@
   - Set temp next property to null.
   - and return the temp nodes value.
 - Peek: looking at what's in front.
-  - return whatever value exists at the front
-  - 
+  - return whatever value exists in the front node.
+  - return either a value or null.
 - FIFO / LILO (First in First out) / ( Last in last out )
