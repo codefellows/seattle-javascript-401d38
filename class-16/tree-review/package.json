@@ -1,0 +1,14 @@
+{
+  "name": "tree-review",
+  "version": "1.0.0",
+  "description": "binary & binary search tree review",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.2"
+  }
+}
