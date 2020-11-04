@@ -14,9 +14,15 @@ let socketPool = {};
 // The first thing that occurs
 server.on('connection', (socket) => {
   console.log('socket connected');
-  let socketId = `SOCKET-${Math.floor(Math.random() * 10000)}`;
+  let socketId = `SOCKET-${Math.floor(Math.random() * 10000000)}`;
 
   socketPool[socketId] = socket;
+
+  // TCP events are standardized
+  // connection
+  // data
+  // disconnect
+  // error
 
   // define events on the socket object;
   socket.on('data', (buffer) => {
@@ -24,11 +30,12 @@ server.on('connection', (socket) => {
 
     let socketEvent = JSON.parse(buffer.toString());
 
+    // Rizo; the first CAPS event
     if (socketEvent.event === 'pickup') {
-      let socketArray = Object.keys(socketPool);
 
-      for (let socketId of socketArray) {
-        console.log(socketId);
+      // send data to sockets in the pool
+      for (let socketId in socketPool) {
+        console.log('writing to ' + socketId);
         socketPool[socketId].write(JSON.stringify({
           event: 'order-ready',
           payload: socketEvent.payload,
@@ -46,19 +53,5 @@ server.on('connection', (socket) => {
 
 });
 
-// Rizo; the first CAPS event
 
 
-// TCP events are standardized
-// connection
-// data
-// disconnect
-// error
-// server.on('data', (buffer) => { // Connections want to gaurantee successful data transter, usualyy unicode bytes.
-
-//   // what is this buffer?
-//   const stringData = buffer.toString();
-//   // this is a very very small amount of info that represents a chunk of this incoming information.
-
-//   console.log(stringData);
-// });

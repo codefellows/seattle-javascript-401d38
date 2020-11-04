@@ -21,6 +21,7 @@ socket.connect({
   console.log('Connected to Hub Server');
 
   // immediately sends one event to our HUB
+  console.log('sending pickup order to hub')
   socket.write(JSON.stringify({
     event: 'pickup',
     payload: 'Some flowers',
