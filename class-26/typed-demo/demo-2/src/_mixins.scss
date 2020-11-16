@@ -1,0 +1,4 @@
+@mixin border($pixels) {
+  border-radius: $pixels;
+  border: thin solid $blue;
+}
