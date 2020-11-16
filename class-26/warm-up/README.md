@@ -20,7 +20,7 @@ It also contains 7 methods
 - EuqueueRight: Adds a new Node heading toward the right side of the `Deque`.
 - DequeueLeft: Removes and returns the Node from the elft side of the `Deque`.
 - DequeueRight: Removes and returns the Node from the right side of the `Deque`.
-- isEmpty: Returns a boolean true of fales whether there are any Nodes in the `Deque`.
+- isEmpty: Returns a boolean true or false whether there are any Nodes in the `Deque`.
 - peekLeft: Returns the front of the left side of the `Deque`.
 - peekRight: Returns the front of the right side of the `Deque`.
 
