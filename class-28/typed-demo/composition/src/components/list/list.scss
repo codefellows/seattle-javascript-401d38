@@ -1,0 +1,13 @@
+.list {
+  list-style-type: none;
+  border: thin solid lightblue;
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+
+  .listItem {
+    margin: 10px;
+  }
+}
+
+
