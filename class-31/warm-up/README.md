@@ -19,4 +19,4 @@ function palindrome = (string) => {
 ## Hints
 
 - Try and reproduce the same series of operations as the code above but without the use of the built in methods.
-- What data structures could you use to replcate the order of characters required for validation?
+- What data structures could you use to replicate the order of characters required for validation?
