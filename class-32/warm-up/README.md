@@ -10,6 +10,6 @@ anagram('dormitory', 'dirty room'); // returns true
 
 anagram('school master', 'the classroom'); // returns true
 
-anagram('not', 'right') // retrns false
+anagram('not', 'right') // returns false
 
 ```
