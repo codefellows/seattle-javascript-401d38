@@ -112,6 +112,8 @@ class Graph {
           stack.push(node);
         }
       }
+
+      currentNode = stack.pop();
     }
 
     return visited;
@@ -159,6 +161,7 @@ graph.addEdge(B, E);
 graph.addEdge(B, D);
 graph.addEdge(D, C);
 
-// console.log(graph.breadthFirst(A));
-console.log(graph.recursiveDepthFirst(A));
+console.log(graph.breadthFirst(A));  // => [A, B, D, C, E]
+// console.log(graph.depthFirst(A));
+console.log(graph.recursiveDepthFirst(A)); // => [A, B, E, D, C]
 
